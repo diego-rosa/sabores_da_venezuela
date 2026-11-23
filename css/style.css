@@ -14,7 +14,7 @@ header{
 }
 
 .menu-nav {
-    width: 96%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -644,6 +644,66 @@ div.bebidas>div{
     margin-bottom: 10%;
 }
 
+/*************************************/
+/***** SEÇÃO SOBREMESAS E DOCES ******/
+/*************************************/
+
+.sec-sobremesas {
+    padding: 60px 20px;
+    background-color: #FFFFFF;
+}
+
+.sec-top {
+    margin-bottom: 5%;
+}
+
+.sec-top p {
+    margin-top: 2%;
+}
+
+.sec-sobremesas img {
+    width: 90%;
+    transform: scale(1.05);
+    transition: 1s;
+    opacity: .8;
+    border: 1px solid #FFFFFF;
+}
+
+.sec-sobremesas img:hover,
+.sec-ingredientes img:active {
+    transform: scale(1.15);
+    opacity: 1;
+    border: 2px solid #FFFFFF;
+}
+
+h2 {
+    font-size: 180%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sobremesas {
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.sobremesas>div{
+   padding: 1%;
+}
+
+.sobremesas h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.sobremesas p {
+    text-align: justify;
+    margin-bottom: 10%;
+}
 
 /*************************************/
 /************* FOOTER ****************/
