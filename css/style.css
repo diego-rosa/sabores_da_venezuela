@@ -13,9 +13,24 @@ header{
     background-color: #F4E7CE;
 }
 
-header>btn-close{
-    content-align: right;
+.menu-nav {
+    width: 96%;
+    margin: 0 auto;
+}
 
+.navbar-brand {
+    font-size: 30px;
+    font-family: 'Verdana', sans-serif;
+    margin-right: 10%;
+}
+
+/* Cabeçalho do menu aberto: separa o título "Menu" e o botão "X" */
+.drawer-header {
+    display: flex;
+    justify-content: space-between; /* joga o Menu para a esquerda e o X para a direita */
+    align-items: center;            /* alinha os dois no centro vertical */
+    width: 100%;
+    padding: 1rem 1.25rem;          /* dá o respiro interno para não colar na borda */
 }
 
 .hero {
@@ -633,36 +648,21 @@ div.bebidas>div{
 /*************************************/
 /************* FOOTER ****************/
 /*************************************/
-.sec-footer {
+footer {
     padding: 60px 20px 30px;
-    background-color: #f8f9fa;
-    color: #111;
+    background-color: #666;
+    color: #FFFFFF;
 }
 
-.newsletter-header {
-    margin-bottom: 25px;
-}
-
-.newsletter-header h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #111;
-    margin-bottom: 8px;
-    text-transform: none; /* mantém o texto em maiúsculas/minúsculas natural */
-}
-
-.newsletter-header p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Moldura do formulário (exatamente como na imagem) */
+/* Moldura do formulário*/
 .form-newsletter {
     max-width: 550px;
-    border: 1px solid #111;
+    border: 1px solid #000;
     background-color: #fff;
     padding: 25px;
     margin-bottom: 40px;
+    color: #000;
+    margin: 0 auto;
 }
 
 .campo-grupo {
@@ -684,15 +684,14 @@ div.bebidas>div{
     padding: 10px 12px;
     font-size: 0.95rem;
     border: 1px solid #111;
-    background-color: #fff;
-    outline: none;
 }
 
 /* Grade 2x2 para as opções com checkbox */
-.interesses-grid {
+.interesses {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    
 }
 
 .interesse-box {
@@ -702,11 +701,10 @@ div.bebidas>div{
     border: 1px solid #111;
     padding: 10px 12px;
     font-size: 0.88rem;
-    background-color: #fff;
     cursor: pointer;
 }
 
-/* Botão preto largo de envio */
+/* Botão de envio */
 .btn-newsletter {
     width: 100%;
     padding: 14px;
@@ -727,14 +725,13 @@ div.bebidas>div{
 .copyright {
     text-align: center;
     font-size: 0.85rem;
-    color: #777;
+    color: #FFF;
     margin-top: 20px;
 }
 
 /* Ajuste mobile se a tela for muito estreita */
 @media (max-width: 480px) {
-    .interesses-grid {
+    .interesses {
         grid-template-columns: 1fr;
     }
 }
-

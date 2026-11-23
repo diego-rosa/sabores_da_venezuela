@@ -9,26 +9,48 @@
 </head>
 <body>
     <header>
-        <nav class="navbar md:navbar-expand bg-1 fg-2">
+        <div class="menu-nav">
+            <nav class="navbar lg:navbar-expand bg-1 fg-2" style="background-color: #F4E7CE">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Sabores da Venezuela</a>
-                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarTopDrawer" aria-controls="navbarTopDrawer" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">Sabores da Venezuela</a>
+                <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNavMenu" aria-controls="navbarNavMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
-                <dialog class="drawer drawer-top" tabindex="-1" id="navbarTopDrawer" aria-labelledby="navbarTopDrawerLabel">
+                <dialog class="drawer drawer-end" tabindex="-1" id="navbarNavMenu" aria-labelledby="navbarNavMenuLabel">
                 <div class="drawer-header">
-                    <h5 class="drawer-title" id="navbarTopDrawerLabel">Menu</h5>
+                    <h5 class="drawer-title" id="navbarNavMenuLabel">Menu</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
                 </div>
                 <div class="drawer-body">
-                    <ul class="navbar-nav me-auto mb-2 md:mb-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Raízes e História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">O pão nosso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Principais pratos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comida de rua</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ingredientes essenciais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bebidas Típicas</a>
+                        </li>
                     </ul>
                 </div>
                 </dialog>
             </div>
         </nav>
+        </div>
+        
     </header>
     <main>
         <section class="hero">
@@ -270,29 +292,24 @@
             </div>
         </section>
     </main>
-        <footer class="sec-footer">
-        <div class="container-padrao">
-            
-            <div class="newsletter-header">
+        <footer>
+        <div class="container-padrao"> 
+            <div class="sec-top">
                 <h2>Assine a Newsletter</h2>
                 <p>Receba receitas, eventos e histórias no seu e-mail.</p>
             </div>
-
-            <!-- Formulário com os 5 elementos numerados -->
-            <form class="form-newsletter" action="#" method="post">
-                
+            <!-- Formulário com os 5 elementos -->
+            <form  name="form-newsletter" class="form-newsletter" action="#" method="post">
                 <!-- 1 · Nome -->
                 <div class="campo-grupo">
                     <label for="nome" class="campo-label">1 · Nome</label>
                     <input type="text" id="nome" name="nome" class="campo-input" required>
                 </div>
-
                 <!-- 2 · E-mail -->
                 <div class="campo-grupo">
                     <label for="email" class="campo-label">2 · E-mail</label>
                     <input type="email" id="email" name="email" class="campo-input" required>
                 </div>
-
                 <!-- 3 · Estado -->
                 <div class="campo-grupo">
                     <label for="estado" class="campo-label">3 · Estado</label>
@@ -306,11 +323,10 @@
                         <option value="MG">Minas Gerais</option>
                     </select>
                 </div>
-
-                <!-- 4 · Assunto de interesse (Grade 2x2 com caixas) -->
+                <!-- 4 · Assunto de interesse (Grade 2x2 com caixas)-->
                 <div class="campo-grupo">
                     <span class="campo-label">4 · Assunto de interesse</span>
-                    <div class="interesses-grid">
+                    <div class="interesses">
                         <label class="interesse-box">
                             <input type="checkbox" name="interesse" value="receitas">
                             <span>Receitas</span>
@@ -329,14 +345,13 @@
                         </label>
                     </div>
                 </div>
-
-                <!-- 5 · Botão de Envio -->
-                <button type="submit" class="btn-newsletter">5 · Assinar newsletter</button>
+                <!--Botão de Envio -->
+                <button type="submit" class="btn-newsletter">Assinar newsletter</button>
             </form>
-
             <p class="copyright">&copy; 2026 Sabores da Venezuela. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 </body>
-<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+
 </html>
