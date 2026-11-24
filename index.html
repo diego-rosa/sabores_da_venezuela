@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="menu-nav">
-            <nav class="navbar lg:navbar-expand bg-1 fg-2" style="background-color: #F4E7CE">
+            <nav class="navbar lg:navbar-expand bg-1 fg-2">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Sabores da Venezuela</a>
                 <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNavMenu" aria-controls="navbarNavMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +27,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Raízes e História</a>
+                            <a class="nav-link" href="#">História</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">O pão nosso</a>
+                            <a class="nav-link" href="#">Arepa</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Principais pratos</a>
@@ -39,10 +39,10 @@
                             <a class="nav-link" href="#">Comida de rua</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Ingredientes essenciais</a>
+                            <a class="nav-link" href="#">Ingredientes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Bebidas Típicas</a>
+                            <a class="nav-link" href="#">Bebidas</a>
                         </li>
                     </ul>
                 </div>
@@ -315,6 +315,35 @@
                     </div>
                 </div>  
             </div>      
+        </section>
+        <section class="sec-receitas">
+            <div class="container-padrao">
+                <div class="sec-top">
+                    <h2>Compartilhe sua receita</h2>
+                    <p>Conhece uma variação de um prato? Envie para a comunidade.</p>
+                </div>
+            </div>
+                <div class="form">
+                    <form>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Nome do prato</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ex: Arepa de Camarão">
+                        </div>
+                        <div class="form-field">
+                            <label for="fieldTextarea" class="form-label">Message</label>
+                            <textarea class="form-control" id="fieldTextarea" rows="3"></textarea>
+                        </div>
+                    <button type="submit" class="btn-solid theme-primary">Enviar</button>
+                </form>  
+                </div>
         </section>
     </main>
         <footer>
